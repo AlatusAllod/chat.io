@@ -1,0 +1,241 @@
+body {
+	background-color: #cccccc;
+	font-family: Karla, Georgia, sans-serif;
+}
+
+.flex {
+	display: flex;
+	position: relative;
+    flex-direction: column;
+	margin: auto;
+	width: 750px;
+	height: 1334px;
+	background: linear-gradient(225deg, #00a0ff 540px, #0090e5 540px);
+	justify-content: space-between;
+}
+
+.top {
+	display: flex;
+	height: 130px;
+	background-color: #000000;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.userName {
+	color: #ffffff;
+	font-size: 30px;
+	transform: translate(0, -30px);
+}
+
+.backArrow {
+	width: 0; 
+	height: 0;
+	border-top: 10px solid transparent;
+	border-right: 15px solid #ffffff;
+	border-bottom: 10px solid transparent;
+	transform: translate(40px, -35px);
+}
+
+.menu {
+	transform: translate(-45px, -30px);
+}
+
+.dot-1 {
+	transform: translate(0, -8px);
+	width: 10px; 
+	height: 10px;
+	background-color: #ffffff;
+	border-radius: 50%;
+}
+
+.dot-2 {
+	width: 10px; 
+	height: 10px;
+	background-color: #ffffff;
+	border-radius: 50%;
+}
+
+.bottom {
+	display: flex;
+	height: 110px;
+	background-color: #000000;
+	align-items: center;
+}
+
+.cameraMain {
+	background-color: #ffffff;
+	width: 40px;
+	height: 30px;
+}
+
+.cameraTop {
+	width: 14px;
+	height: 4px;
+	background-color: #ffffff;
+	transform: translate(13px, 0);
+}
+
+.cameraCenter {
+	width: 12px; 
+	height: 12px;
+	background: #000000;
+	border-radius: 50%;
+	transform: translate(14px, 9px);
+}
+
+.makePhotoButton {
+	margin: 0 45px;
+}
+
+input[name="messageField"] {
+	border: none;
+	color: #ffffff;
+	background-color: #000000;
+	font-size: 30px;
+}
+
+.sendMessage {
+	position: absolute;
+	right: 50px;
+	bottom: 50px;
+	width: 120px; 
+	height: 120px;
+	background-color: #ffbdb8;
+	border-radius: 50%;
+}
+
+.sendArrow {
+	width: 0; 
+	height: 0;
+	border-top: 16px solid transparent;
+	border-left: 40px solid #000000;
+	border-bottom: 16px solid transparent;
+	transform: translate(42px, 44px);
+}
+
+.sendArrowSq {
+	width: 8px; 
+	height: 6px;
+	background-color: #ffbdb8;;
+	transform: translate(-40px, -3px);
+}
+
+.middle {
+	display: flex;
+    flex-direction: column;
+	height: 1100px;
+}
+
+.middle-head {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 145px;
+	color: #ffffff;
+}
+
+.clock {
+	width: 34px; 
+	height: 34px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	margin-right: 25px;
+}
+
+.clockArrow-1 {
+	width: 4px; 
+	height: 11px;	
+	background-color: #00a0ff;
+	transform: translate(14px, 9px);
+}
+
+.clockArrow-2 {
+	width: 11px; 
+	height: 4px;	
+	background-color: #00a0ff;
+	transform: translate(0px, 7px);
+}
+
+.lastMessage {
+	font-size: 22px;
+	font-weight: bold;
+	letter-spacing: 3px;
+}
+
+.flexMessage {
+	display: flex;
+	margin: 0 50px 50px 50px;
+	flex-wrap: nowrap;
+}
+
+.message {
+	padding: 40px 50px;
+	display: inline-block;
+	background-color: #ffffff;
+	box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+}
+
+.avatar img {
+	box-shadow: 0 25px 30px rgba(0,0,0,0.2);
+}
+
+.textMessage {
+	font-size: 30px;
+}
+
+.sendWhen {
+	font-weight: bold;
+	font-size: 20px;
+	color: #ad807d;
+	margin-top: 10px;
+}
+
+.dots {
+	display: flex;
+	margin-left: 50px;
+	align-items: center;
+}
+
+.writeDots {
+	width: 12px; 
+	height: 12px;
+	border-radius: 50%;
+}
+
+.writeDot-1 {
+	background-color: #ffbdb8;
+	margin-right: 10px;
+	animation-name: dotAnimation;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+.writeDot-2 {
+	background-color: #99abca;
+	margin-right: 10px;
+	animation-name: dotAnimation;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+    animation-delay: -0.25s;
+}
+
+.writeDot-3 {
+	background-color: #66a2d3;
+	animation-name: dotAnimation;
+	animation-duration: 0.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+    animation-delay: -0.5s;
+}
+
+@keyframes dotAnimation {
+	from {background-color: #ffbdb8;}
+	50% {background-color: #99abca;}
+	to {background-color: #66a2d3;}
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Fancy chat for chilling out">    
+    <title>Chat</title>
+    <link rel="stylesheet" href="chat.css">
+	  <link rel="icon" type="image/png" href="favicon.png">
+  </head>
+
+  <body>
+    <div class="flex">
+      <div class="top">
+        <div class="backArrow" onclick="getBack()"></div>
+        <div class="userName">Тестовое задание</div>
+        <div class="menu">
+          <div class="dot-1"></div>
+          <div class="dot-2"></div>
+        </div>
+      </div>
+      <div class="middle">
+        <div class="middle-head">
+          <div class="clock">
+            <div class="clockArrow-1">
+              <div class="clockArrow-2"></div>
+            </div>
+          </div>
+          <div class="lastMessage">TODAY AT 10:45AM</div>
+        </div>
+        <div class="flexMessage">
+          <div class="avatar"><img src="friend1Avatar.png" width="80" height="80"></div>
+          <div class="message">
+            <div class="textMessage">Hi Andrea! How are you?</div>
+            <div class="sendWhen">5 minutes ago</div>
+          </div>
+        </div>
+        <div class="flexMessage">
+          <div class="message user">
+            <div class="textMessage">Doing good, how do you feel about grabbing a coffee sometime?</div>
+            <div class="sendWhen">5 minutes ago</div>
+          </div>          
+          <div class="avatar"><img src="userAvatar.png" width="80" height="80"></div>
+        </div>
+        <div class="flexMessage">
+          <div class="avatar"><img src="friend2Avatar.png" width="80" height="80"></div>
+          <div class="dots">
+            <div class="writeDot-1 writeDots"></div>
+            <div class="writeDot-2 writeDots"></div>
+            <div class="writeDot-3 writeDots"></div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="makePhotoButton">
+          <div class="cameraTop"></div>
+          <div class="cameraMain">
+            <div class="cameraCenter"></div>
+          </div>
+        </div>
+        <form action="#" method="post">
+          <input type="text" name="messageField" id="messageField" placeholder="Type message. . .">
+        </form>
+      </div>
+      <div class="sendMessage">
+        <div class="sendArrow">
+          <div class="sendArrowSq"></div>
+        </div>
+      </div>
+    </div>
+    <script src="chat.js"></script>
+  </body>
+
+</html>
